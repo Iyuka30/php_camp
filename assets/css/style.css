@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* ==================== index.php ==================== */
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+  color: #444444;
+}
+
+/* ===== ヘッダー ==================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(232, 213, 117, 0.4392156863);
+  height: 80px;
+  position: sticky;
+  top: 0;
+  font-family: "Dela Gothic One", cursive;
+}
+
+.header-img {
+  width: 95px;
+  margin-left: 10px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav a {
+  text-decoration: none;
+  margin: 20px 50px 20px 0;
+  color: #444444;
+}
+
+/* ===== 共通 ==================== */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+/* ===== トップ画像 ==================== */
+.kv {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.kv img {
+  width: 75%;
+}
+
+/* 文字を縦に */
+.kv h1 {
+  text-align: start;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  margin: 40px 0 0 10px;
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 50px;
+}
+
+.kv h1 span {
+  padding-top: 50px;
+}
+
+/* ===== おすすめキャンプサイト ==================== */
+.spot h1 {
+  margin: 150px 0 50px;
+  font-family: "Dela Gothic One", cursive;
+}
+
+.spot h1 span {
+  font-family: "Train One", cursive;
+  padding: 0 5px;
+  font-size: 50px;
+}
+
+.spot-box {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  column-gap: 5%;
+}
+
+.spot-box img {
+  border-radius: 50%;
+  transform: 0.6s ease;
+}
+
+.spot-box img:hover {
+  transform: scale(1.1);
+}
+
+.kinarinosato-img {
+  width: 400px;
+}
+
+/* ===== おすすめギア＆レシピ ==================== */
+.pickup {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.pickup-btn {
+  /* display: inline-flex; */
+  /* flex-direction: column; */
+  justify-content: center;
+  text-decoration: none;
+}
+
+.pickup-btn a {
+  border-radius: 50px;
+  border: solid 10px #E8D575;
+  box-sizing: border-box;
+  padding: 10px 50px;
+  margin: 0 20px;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "Dela Gothic One", cursive;
+  color: #444444;
+}
+
+.pickup-btn a:hover {
+  background-color: rgb(241, 238, 238);
+}
+
+/* ===== お問い合わせ ==================== */
+#wrapper {
+  max-width: 1500px;
+}
+
+.contact {
+  background-image: url(img/mountain.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1500px;
+  text-align: center;
+  font-family: "Dela Gothic One", cursive;
+}
+
+.contact h1 {
+  margin-top: 150px;
+}
+
+input, label, textarea {
+  display: block;
+  width: 500px;
+  margin: 0px auto;
+  color: #444444;
+}
+
+label {
+  text-align: start;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.889);
+  padding: 20px 70px;
+}
+
+input, textarea {
+  border-radius: 20px;
+  border: solid 3px #00A56A;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+/* ボタン ---------- */
+input[type=submit] {
+  background-color: #E8D575;
+  border: solid 3px #E8D575;
+  margin: 20px auto 50px;
+  font-family: "Dela Gothic One", cursive;
+}
+
+input[type=submit]:hover {
+  background-color: #e7cb43;
+  border: solid 3px #e7cb43;
+}
+
+/* ===== フッター ==================== */
+footer {
+  background-color: rgba(232, 213, 117, 0.4392156863);
+  height: 80px;
+}
+
+.footer-sns {
+  text-align: center;
+}
+
+.sns-navi {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  margin-right: 40px;
+}
+
+.sns-navi li {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.sns-navi a {
+  margin-left: 30px;
+  color: #444444;
+  font-size: 25px;
+}/*# sourceMappingURL=style.css.map */

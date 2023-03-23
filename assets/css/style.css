@@ -64,9 +64,13 @@ h1 {
   font-family: "Zen Kurenaido", sans-serif;
   font-size: 50px;
 }
-
 .kv h1 span {
   padding-top: 50px;
+}
+@media screen and (max-width: 767px) {
+  .kv h1 {
+    -ms-writing-mode: horizontal-tb;
+  }
 }
 
 /* ===== おすすめキャンプサイト ==================== */
@@ -86,6 +90,11 @@ h1 {
   justify-content: space-around;
   text-align: center;
   column-gap: 5%;
+}
+@media screen and (max-width: 767px) {
+  .spot-box {
+    display: block;
+  }
 }
 
 .spot-box img {

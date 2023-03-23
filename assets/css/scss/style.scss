@@ -1,3 +1,21 @@
+// レスポンシブ設定対応
+$pc: 1800px;
+$sp: 767px;
+
+@mixin pc {
+  @media screen and (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+}
+// レスポンシブ設定対応ここまで
+
+
 /* ==================== index.php ==================== */
 
 body {
@@ -64,9 +82,12 @@ h1{
   margin: 40px 0 0 10px;
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 50px;
-}
-.kv h1 span{
-  padding-top: 50px;
+  span{
+    padding-top: 50px;
+  }
+  @include sp {
+    -ms-writing-mode: horizontal-tb;
+  }
 }
 
 
@@ -87,6 +108,10 @@ h1{
   justify-content: space-around;
   text-align: center;
   column-gap: 5%;
+  @include sp {
+    display: block;
+  }
+
 }
 .spot-box img{
   border-radius: 50%;
